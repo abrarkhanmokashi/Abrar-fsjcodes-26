@@ -1,17 +1,22 @@
-public class Person {
-    private String name;
-    private int age;
-    private String gender;
+public class Employee extends Person {
+    private int salary;
+    private String working_hours;
+    private int employee_id;
+    private String department;
  
-    Person(String name, int age, String gender){
-        this.name = name;
-        this.age = age;
-        this.gender = gender;
+    Employee(String name, int age, String gender, int salary, String working_hours, int employee_id, String department) {
+        super(name, age, gender);
+        this.salary = salary;
+        this.working_hours = working_hours;
+        this.employee_id = employee_id;
+        this.department = department;
     }
  
     void display(){
-        System.out.println("Name: " + this.name);
-        System.out.println("Age: " + this.age);
-        System.out.println("Gender: " + this.gender);
+        super.display();
+        System.out.println("Salary: " + this.salary);
+        System.out.println("Hours of Working: " + this.working_hours);
+        System.out.println("Employee ID: " + this.employee_id);
+        System.out.println("Department of Functioning: " + this.department);
     }
 }
