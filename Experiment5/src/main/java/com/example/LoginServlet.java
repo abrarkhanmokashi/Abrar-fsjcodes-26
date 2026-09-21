@@ -19,7 +19,7 @@ public class LoginServlet extends HttpServlet {
             Connection con = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/exp5db",
                     "root",
-                    "Mayuresh#437");
+                    "Abrarkhan");
 
             Statement stmt = con.createStatement();
 
