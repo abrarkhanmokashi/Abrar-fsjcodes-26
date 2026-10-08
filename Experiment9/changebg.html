@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+
+<body style="text-align: center; background-color: aqua;">
+
+    <h1>Welcome to RCOE</h1>
+    <h2>Abrarkhan</h2>
+
+    <button onclick="changeBg()">Change Background</button>
+
+    <script>
+        function changeBg() {
+            let colors = ["red", "blue", "#ed13c9", "#13ed7c", "#f0ed65"];
+
+            const bodyEle = document.querySelector("body");
+
+            let randomIndex = Math.floor(Math.random() * colors.length);
+
+            bodyEle.style.backgroundColor = colors[randomIndex];
+        }
+
+        setInterval(changeBg, 5000);
+    </script>
+
+</body>
+</html>
